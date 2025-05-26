@@ -17,7 +17,7 @@ if __name__ == "__main__":
           video_path=os.path.join(video_dir,filename)
           audio_filename=os.path.splitext(filename)[0]+".wav"
           audio_path=os.path.join(audio_dir,audio_filename)
-     if not os.path.exists(audio_path):
-          extract_audio(video_path,audio_path)
+          if not os.path.exists(audio_path):
+             extract_audio(video_path,audio_path)
 
     
